@@ -1,10 +1,22 @@
 import java.util.Scanner;
 
+
 public class WordCloudMaker {
   public static void main(String[] args){
     Scanner keyboard = new Scanner(System.in);
+    
     String word;
-    int count;
+    int maximumFrequency = 0;
+    int minimumFrequency = Integer.MAX_VALUE;
+
+    for(WordCount wordCount : wordCountList) {
+      if(wordCount.count > maximumFrequency) {
+        maximumFrequency = wordCount.count;
+        }
+      if(wordCount.count < minimumFrequency) {
+        minimumFrequency = wordCount.count;
+      }
+    }
 
     System.out.print( "Enter a word: " );
     keyboard.nextLine();

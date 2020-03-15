@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #cccccc;
+  background-color: #fefefe;
+  transform: none;
+  border: 5px grey solid;
+  text-align: center;
+  color: #454545;
+  font-family: Raleway, Robot;
+}
+div {
+  display: block;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+.nav--btns {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  text-align: center;
+  height: 0;
+  background: #EEE;
+  overflow: hidden;
+  will-change: height;
+}
